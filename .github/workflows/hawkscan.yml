@@ -21,4 +21,7 @@ jobs:
         uses: stackhawk/hawkscan-action@v1.3.0
         with:
           apiKey: ${{ secrets.HAWK_API_KEY }}
-          configurationFiles: stackhawk.yml stackhawk-github.yml
+          environmentVariables: APP_HOST APP_ENV
+        env:
+          APP_HOST: http://localhost:8020
+          APP_ENV: GitHub
