@@ -2,7 +2,6 @@ app:
   applicationId: ${APP_ID:9e5c8c43-de3a-4b0b-9b50-cd483ba68924}
   env: ${APP_ENV:Development}
   host: ${APP_HOST:http://localhost:8020}
-
 #  # The name of your anti csrf parameter
   antiCsrfParam: csrfmiddlewaretoken # (optional)
   excludePaths:
