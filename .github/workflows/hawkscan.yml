@@ -18,10 +18,11 @@ jobs:
       - name: Run App
         run: docker-compose up -d
       - name: Run HawkScan
-        uses: stackhawk/hawkscan-action@v1.3.1
+        uses: stackhawk/hawkscan-action@v1.3.4
         with:
           apiKey: ${{ secrets.HAWK_API_KEY }}
           environmentVariables: APP_ENV APP_ID
+          version: 2.0.0
         env:
           APP_ENV: GitHub
           APP_ID: d023acb5-c8d4-426d-a572-148bfea653b4
