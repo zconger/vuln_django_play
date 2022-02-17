@@ -23,6 +23,7 @@ jobs:
           apiKey: ${{ secrets.HAWK_API_KEY }}
           environmentVariables: APP_ENV APP_ID
           image: kberg/hawkscan
+          version: 2.1.1
         env:
           APP_ENV: GitHub
           APP_ID: d023acb5-c8d4-426d-a572-148bfea653b4
